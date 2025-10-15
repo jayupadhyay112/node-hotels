@@ -1,27 +1,27 @@
-const express = require('express')
-const app = express();
-// const db = require('./db')
+// const express = require('express')
+// const app = express();
+// // const db = require('./db')
 
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
-// const MenuItem = require('./models/MenuItem')
-
-
-const personRoutes = require('./routes/personRoutes')
-const menuItemRoutes = require('./routes/menuItemRoutes')
-app.use('/person',personRoutes)
-app.use('/menu',menuItemRoutes)
-
-app.listen(4000, () => {
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.json());
+// // const MenuItem = require('./models/MenuItem')
 
 
-    console.log('Listening on port 4000');
+// const personRoutes = require('./routes/personRoutes')
+// const menuItemRoutes = require('./routes/menuItemRoutes')
+// app.use('/person',personRoutes)
+// app.use('/menu',menuItemRoutes)
 
-})
+// app.listen(4000, () => {
 
-app.get('/', function (req, res) {
-    res.send('welcome to our local host...!!!!')
-})
+
+//     console.log('Listening on port 4000');
+
+// })
+
+// app.get('/', function (req, res) {
+//     res.send('welcome to our local host...!!!!')
+// })
 
 
 
